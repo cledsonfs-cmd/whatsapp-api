@@ -1,0 +1,18 @@
+import { WAMonitoringService } from './services/monitor.service';
+import { ChatController } from './controllers/chat.controller';
+import { InstanceController } from './controllers/instance.controller';
+import { SendMessageController } from './controllers/sendMessage.controller';
+import { GroupController } from './controllers/group.controller';
+import { ViewsController } from './controllers/views.controller';
+import { WebhookController } from './controllers/webhook.controller';
+import { RepositoryBroker } from './repository/repository.manager';
+import { RedisCache } from '../db/redis.client';
+export declare const repository: RepositoryBroker;
+export declare const cache: RedisCache;
+export declare const waMonitor: WAMonitoringService;
+export declare const webhookController: WebhookController;
+export declare const instanceController: InstanceController;
+export declare const viewsController: ViewsController;
+export declare const sendMessageController: SendMessageController;
+export declare const chatController: ChatController;
+export declare const groupController: GroupController;
